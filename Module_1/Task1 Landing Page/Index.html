@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>Code Submit || Home Page</title>
+    <link rel="stylesheet" href="Index.css">
+</head>
+
+<body>
+    <header>
+        <div class="time"></div>
+        <div class="countdown-time">
+            <h2 class="gradient-text">Code Submit</h2>
+        </div>
+        <nav>
+            <li class="active"><a href="Index.html">Featured content</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#recentupdate">Recent Update</a></li>
+            <li><a href="#upcomingevents"></a>Upcomig Event</li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#subscribe">Subscribe</a></li>
+        </nav>
+    </header>
+    <hr class="gradient">
+    <section class="content">
+        <div class="container">
+        </div>
+    </section>
+    <hr class="gradient">
+    <section class="speakers" id="speakers">
+        <h1 class="gradient-text">Welcome to Web Dev 3.0</h1>
+        <div>
+            <h2>Date: 23 Jan 2024</h2>
+        </div>
+        <br>
+        <a class="button" id="register" onclick="openForm()">
+            REGISTER
+        </a>
+        <h1> Our Speakers</h1>
+        <ul class="speaker-list">
+            <li>
+                <img alt="Nicole Forsgren"
+                    src="https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png">
+                <h3>Getting better together: What enterprise can learn from global patterns</h3>
+                <h4>Nicole Forsgren</h4>
+                <h5>VP Research & Strategy, GitHub</h5>
+            </li>
+            <li>
+                <img alt="Angie Jones"
+                    src="https://w7.pngwing.com/pngs/4/736/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon-thumbnail.png">
+                <h3>Visual tests on every pull request</h3>
+                <h4>Angie Jones</h4>
+                <h5>Principal Developer Advocate, Applitools</h5>
+            </li>
+            <li>
+                <img alt="Hung Brown Ton"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIn-gE6j6sjvg0ekFgFBIzVP5VdN3aBu9dLg&usqp=CAU">
+                <h3>From scientific poster sessions to GitHub global actions: transforming a century plus company to the
+                    digital age</h3>
+                <h4>Hung Brown Ton</h4>
+                <h5>Chief Architect, 3M Company</h5>
+            </li>
+        </ul>
+    </section>
+    <hr class="gradient">
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>REGISTER</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" id="email" name="" required autocomplete="off">
+            <label for="FirstName"><b>First Name</b></label>
+            <input type="text" placeholder="first Name" id="FirstName" name="" required autocomplete="off">
+            <label for="lastname"><b>Last Name</b></label>
+            <input type="text" placeholder="Last Name" id="lastname" name="" required autocomplete="off">
+            <label for="Education"><b>Education</b></label>
+            <input type="text" placeholder="Education" id="Education" name="" required autocomplete="off">
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <hr>
+    <section class="attends">
+        <h2>Why attend?</h2>
+
+        <h4 class="text-gradient-purple">Learn from the best</h4>
+        <p>Three channels of content dedicated to developers, enterprise teams, and college students.</p>
+
+        <h4 class="text-gradient-purple">Get the latest</h4>
+        <p>New product announcements and deep dives.</p>
+
+        <h4 class="text-gradient-purple">Connect beyond content</h4>
+        <p>Networking and learning opportunities, from Workshops to mentoring sessions.</p>
+
+        <h4 class="text-gradient-purple">Have fun along the way</h4>
+        <p>Musical performances inspired by code and a few more surprises to come!</p>
+    </section>
+    <hr class="gradient">
+
+    <section class="subscribe" id="subscribe">
+        <p>
+            We’re adding more speakers every day!<br>Sign up for updates to stay in the loop.
+        </p>
+        <a href="#subscribe" class="button" target="_blank">
+            <span>Subscribe for updates</span>
+        </a>
+    </section>
+    <hr class="gradient">
+    <section class="center" >
+        <br>
+        <h1>Upcoming Events at Code Submit Web Conference</h1>
+        <div class="card-container" id="upcomingevents">
+            <div class="photo-container">
+                <div class="date">
+                    <div class="day">15</div>
+                    <div class="month">FEB</div>
+                </div>
+                <div class="image"></div>
+            </div>
+            <div class="info-container">
+                <div class="event-name">
+                   Blockchain and Cryptocurrencies
+                </div>
+                <div class="event-location">
+                     Pune. India
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="photo-container">
+                <div class="date">
+                    <div class="day">30</div>
+                    <div class="month">March</div>
+                </div>
+                <div class="image"></div>
+            </div>
+            <div class="info-container">
+                <div class="event-name">
+                   Cloud Computing and its Advantages
+                </div>
+                <div class="event-location">
+                    Mumbai. India
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="photo-container">
+                <div class="date">
+                    <div class="day">16</div>
+                    <div class="month">April</div>
+                </div>
+                <div class="image"></div>
+            </div>
+            <div class="info-container">
+                <div class="event-name">
+                   Internet of Things(IOT) and Big Data
+                </div>
+                <div class="event-location">
+                    Bengaluru .India
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="gradient">
+    <div class="accordion" id="faq">
+        <h1>Frequently Asked Questions</h1>
+        <div class="accordion-item">
+            <input type="checkbox" id="accordion1">
+            <label for="accordion1" class="accordion-item-title"><span class="icon"></span>1. What is Web3?</label>
+            <div class="accordion-item-desc">Web3 refers to the third era of the internet, characterized by decentralized protocols,
+                 blockchain technology, and user empowerment. It aims to create a more open, secure, and user-centric internet.</div>
+        </div>
+
+        <div class="accordion-item">
+            <input type="checkbox" id="accordion2">
+            <label for="accordion2" class="accordion-item-title"><span class="icon"></span> How is Web3 different from Web2?</label>
+            <div class="accordion-item-desc">Web2 relies on centralized services controlled by a few entities,
+                 while Web3 promotes decentralization, giving users more control over their data and interactions.</div>
+        </div>
+
+        <div class="accordion-item">
+            <input type="checkbox" id="accordion3">
+            <label for="accordion3" class="accordion-item-title"><span class="icon"></span>How can I get involved in Web3?</label>
+            <div class="accordion-item-desc">Explore blockchain development, learn about decentralized technologies,
+                 and engage with Web3 communities. Stay informed about emerging projects and technologies in the space.</div>
+        </div>
+
+        <div class="accordion-item">
+            <input type="checkbox" id="accordion4">
+            <label for="accordion4" class="accordion-item-title"><span class="icon"></span>Is Web3 only about cryptocurrencies?</label>
+            <div class="accordion-item-desc">While cryptocurrencies play a significant role,
+                 Web3 encompasses a broader vision of a decentralized internet with enhanced privacy, security, and user control.</div>
+        </div>
+
+        <div class="accordion-item">
+            <input type="checkbox" id="accordion5">
+            <label for="accordion5" class="accordion-item-title"><span class="icon"></span>How does Web3 impact privacy?</label>
+            <div class="accordion-item-desc">Web3 aims to enhance privacy by reducing reliance on centralized servers that collect and control user data.
+                 Users have more control over their personal information..</div>
+        </div>
+
+    </div>
+    <footer>
+        <ul class="linear-list">
+            <li>
+                <a href="">Code of Conduct</a>
+            </li>
+            <li>
+                <a href="">Terms</a>
+            </li>
+            <li>
+                <a href="">Privacy</a>
+            </li>
+            <li>
+                <a href="">Event sponsorship</a>
+            </li>
+            <li>
+                <a href="">events@github.com</a>
+            </li>
+        </ul>
+        <a href="">
+            <!-- <img class="logo" src="" alt="logo"> -->
+            <h2 class="gradient-text">Code Submit</h2>
+        </a>
+        <p class="copyright">Code Submit © 2024 GitHub. All rights reserved.</p>
+    </footer>
+    <script src="Index.js"></script>
+</body>
+
+</html>

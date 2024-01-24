@@ -1,0 +1,145 @@
+
+  body {
+    background: linear-gradient(90deg, rgba(44,225,210,0.5) 0%, rgba(221,24,14,1) 100%);
+    color: rgb(17, 13, 13);
+  }
+  .navbar{
+    font-size: 30px;
+    display: inline;
+    margin: 8px;
+    color: #132955;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.4);
+  }
+  
+  
+  .card {
+    padding: 20px 0px;
+    box-shadow: 10px 10px 65px 7px rgb(56, 141, 125,0.8);
+    border-radius:30% 70% 70% 30% / 25% 21% 79% 75% ;
+    
+  }
+  
+  /* Input Section */
+  
+  .card-title {
+    font-size: 24px;
+    padding: 20px 0px;
+    font-weight: 600;
+  }
+  
+  label {
+    font-weight: 500;
+  }
+  
+  select {
+    margin-bottom: 40px;
+  }
+  
+  #selectInputDegreeType {
+    border-radius: 0px 3px 3px 0px;
+  }
+  
+  
+  .convertBtn {
+    min-width: 10px;
+    background-color: rgb(255, 120, 71);
+  
+  
+  }
+  
+  .convertBtn:hover {
+    transition: 0.5s;
+    background-color: rgb(159, 59, 22);
+  }
+  
+  /* Result Section */
+  
+  #resultValueSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    max-height: 200px;
+    word-wrap: normal;
+    text-align: center;
+    font-size-adjust: 0.58;
+  
+  }
+  
+  #convertedDegree {
+    font-size: 65px;
+    font-weight: 500;
+    max-width: 500px;
+  }
+  
+  #convertedUnit,
+  #degree {
+    padding-bottom: 70px;
+  }
+  
+  .resultSection {
+    
+    background-color: rgb(159, 59, 22);
+    color: white;
+  }
+  
+  
+  
+  
+  /* Mobile view  */
+  @media only screen and (max-width: 720px) {
+  
+    body {
+      display: relative;
+      overflow: hidden;
+      justify-content: space-between;
+    }
+    .navbar{
+        display: none;
+    }
+  
+    .card-group {
+      padding: 0;
+    }
+  
+    .card {
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      
+    }
+  
+    .card-title {
+      line-height: 40px;
+    }
+  
+    .card-body {
+      padding: 0;
+    }
+  
+    .resultSection {
+      position: fixed;
+      top: 0;
+      padding: 10px 0px;
+      text-align: center;
+    }
+  
+    .inputSection {
+      margin-top: 60%;
+    }
+  
+    #degree,
+    #convertedUnit {
+      padding-top: 50px;
+    }
+  
+  }
+  @media only screen and (min-width:721px) and (max-width: 1280px){
+    body{
+        justify-content: space-between;
+    }
+    .navbar{
+        display: none;
+    }
+
+  }
